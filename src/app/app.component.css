@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Open+Sans&display=swap');
+
+.heading h1 {
+    font-size: 200%;
+    margin: 0;
+}
+
+.heading h2 {
+    font-size: 80%;
+    margin: 0;
+    font-weight: normal;
+}
+
+.password {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 50px;
+    padding: 10px 0px;
+}
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.generate {
+    border-radius: 15px;
+    border-width: 0px;
+    font-size: 100%;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.choices {
+    margin-top: 10px;
+    font-size: 130%;
+}
+
+.choice input{
+    display: none;
+}
