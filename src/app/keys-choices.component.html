@@ -1,0 +1,5 @@
+<div *ngFor="let elm of myKeys" class="checks" class="container">
+    <input type="checkbox" id={{elm.display}} checked [(ngModel)]="elm.selected"> 
+    <label for={{elm.display}}>{{elm.display}} </label>
+    <span class="checkmark"></span>
+</div>

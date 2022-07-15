@@ -1,4 +1,5 @@
-<div class="content">
+<div class="overall-center">
+  <div class="content">
   <div class="heading">
     <h1>
       Evan's Password Generator
@@ -16,12 +17,13 @@
       </select>
     </div>
     <!-- user can choose which keys they'd like in the password -->
-    <div *ngFor="let elm of keys" class="checks">
-      <input type="checkbox" checked [(ngModel)]="elm.selected"> {{elm.display}}
+    <div class="center-keys-choices">
+      <keys-choices [myKeys]="keys"></keys-choices>
     </div>
   </div>
   <div class="password">{{pass}}</div>
-  <button (click)='generate()' class="generate">
+  <button (click)='generate()' class="generate-button">
     generate
   </button>
+</div>
 </div>

@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Open+Sans&display=swap');
 
+.heading h1, h2{
+    margin: 0;
+}
+
 .heading h1 {
     font-size: 200%;
-    margin: 0;
 }
 
 .heading h2 {
     font-size: 80%;
-    margin: 0;
     font-weight: normal;
 }
 
@@ -19,10 +21,11 @@
 
 .content {
     font-family: 'Open Sans', sans-serif;
+    display: inline-block;
     text-align: center;
 }
 
-.generate {
+.generate-button {
     border-radius: 15px;
     border-width: 0px;
     font-size: 100%;
@@ -37,6 +40,11 @@
     font-size: 130%;
 }
 
-.choice input{
-    display: none;
+.center-keys-choices {
+    display: inline-block;
+    text-align: left;
+}
+
+.overall-center {
+    text-align: center;
 }

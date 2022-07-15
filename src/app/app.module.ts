@@ -3,10 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { KeysChoicesComponent } from './keys-choices.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    KeysChoicesComponent,
   ],
   imports: [
     BrowserModule,
