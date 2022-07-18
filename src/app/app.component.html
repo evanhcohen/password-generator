@@ -12,7 +12,7 @@
     <!-- user can choose length of password -->
     <div>
       Length
-      <select [(ngModel)]="passwordLength" (change)="dashUpdate()">
+      <select [(ngModel)]="passwordLength" (change)="dashUpdate()" class="dropdown">
         <option *ngFor="let num of lengthChoices">{{num}}</option>
       </select>
     </div>
