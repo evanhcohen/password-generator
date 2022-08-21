@@ -1,29 +1,29 @@
 <div class="overall-center">
-  <div class="content">
-  <div class="heading">
-    <h1>
-      Evan's Password Generator
-    </h1>
-    <h2>
-      generates and copies a random password to your clipboard
-    </h2>
-  </div>
-  <div class="choices">
-    <!-- user can choose length of password -->
-    <div>
-      Length
-      <select [(ngModel)]="passwordLength" (change)="dashUpdate()" class="dropdown">
-        <option *ngFor="let num of lengthChoices">{{num}}</option>
-      </select>
+    <div class="content">
+        <div class="heading">
+            <h1>
+                Evan's Password Generator
+            </h1>
+            <h2>
+                generates and copies a random password to your clipboard
+            </h2>
+        </div>
+        <div class="choices">
+            <!-- user can choose length of password -->
+            <div id="length">
+                Length
+                <select [(ngModel)]="passwordLength" (change)="dashUpdate()" class="dropdown">
+                    <option *ngFor="let num of lengthChoices">{{num}}</option>
+                </select>
+            </div>
+            <!-- user can choose which keys they'd like in the password -->
+            <div class="center-keys-choices">
+                <keys-choices [myKeys]="keys"></keys-choices>
+            </div>
+        </div>
+        <div class="password">{{pass}}</div>
+        <button (click)='generate()' class="generate-button">
+            generate
+        </button>
     </div>
-    <!-- user can choose which keys they'd like in the password -->
-    <div class="center-keys-choices">
-      <keys-choices [myKeys]="keys"></keys-choices>
-    </div>
-  </div>
-  <div class="password">{{pass}}</div>
-  <button (click)='generate()' class="generate-button">
-    generate
-  </button>
-</div>
 </div>

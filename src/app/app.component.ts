@@ -22,7 +22,7 @@ export class AppComponent {
   ]
   userKeys = '';
 
-  similar = "l1|IoO0sS"
+  similar = "l1|IoO0sS`(){}[]\/\'\""
 
   // generate random characters from the string provided with setKeys
   randomString(): string {
@@ -34,7 +34,7 @@ export class AppComponent {
     return result;
   }
 
-  // add keys user wants to the string
+  // add keys user wants to the string + removes ambiguous characters 
   setKeys(): void {
     this.userKeys = '';
 
@@ -44,6 +44,9 @@ export class AppComponent {
         this.userKeys += elm.key;
       }
     }
+
+    this.userKeys = this.userKeys.replace(/[l1|IoO0sS`()\[\]{}\\\/\'\"]/g, '')   
+    console.log(this.userKeys) 
   }
 
   generate(): void {
